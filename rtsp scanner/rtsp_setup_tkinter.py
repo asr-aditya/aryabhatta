@@ -51,6 +51,7 @@ if f.mode == 'r':
         check_mac = matches[i]
         #check_mac = re.sub(r'[^\w\s]','',check_mac)
         check_mac = check_mac[0:8]
+        print(check_mac)
         with open('testing.json', 'r') as file:
             jdata = json.load(file)
             isit = check_mac in jdata
