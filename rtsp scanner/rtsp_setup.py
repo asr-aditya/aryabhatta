@@ -26,7 +26,7 @@ def check_vid(rtsp):
             cv2.imshow('frame', frame)
             print(">>>Don\'t worry your rtsp is correct")
         except Exception as error :
-            print('.................................................................\n\n###The entered RTSP url is invalid !! Please recheck your username password and try again ###\n\n...................................................................')
+            print('.................................................................\n\n###The entered RTSP url is invalid !! Please recheck your username password and try again###\n\n...................................................................')
             extract_rtsp(i)
             break
 
@@ -48,8 +48,8 @@ if f.mode == 'r':
     p = re.compile('('+RE2+'|'+RE1+')');
     matches = p.findall(contents)
 
-    # print(matches)
-    # print(len(matches))
+    print(matches)
+    print(len(matches))
 
 
 #ip or dvr
